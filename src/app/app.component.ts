@@ -10,17 +10,10 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
 
-  counter: number = 0;
+  quantity: number = 1;
+  pricePerItem: number = 100;
 
-  onKeyDown(event: KeyboardEvent) {
-    if (event.key === 'ArrowUp') {
-      this.counter++;
-    } else if (event.key === 'ArrowDown') {
-      this.counter--;
-    }
-}
-
-staticInput: string = 'Static two-way binding';
-  dynamicInput: string = '';
-
+  get totalPrice(): number {
+    return this.quantity * this.pricePerItem;
+  }
 }
