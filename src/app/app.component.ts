@@ -8,7 +8,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
- a=10;
- b=20;
- ans = this.a+this.b;
+ inputValue: string = 'Hello';
+ isDisabled: boolean = false;
 }
