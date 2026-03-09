@@ -3,12 +3,17 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  onSelect() {
-    console.log('select event is triggered');
-  }
+onKey(event: KeyboardEvent) {
+  console.log(event.key)        // แสดงปุ่มที่ถูกกด
+}
+
+onClick(event: MouseEvent) {
+  console.log(event.clientX, event.clientY) // พิกัดตำแหน่งที่คลิก
+}
+
 }
