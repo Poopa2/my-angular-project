@@ -4,9 +4,11 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
 })
-export class App {
-  protected readonly title = signal('myAngularProject');
+export class AppComponent {
+ a=10;
+ b=20;
+ ans = this.a+this.b;
 }
