@@ -8,12 +8,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-onKey(event: KeyboardEvent) {
-  console.log(event.key)        // แสดงปุ่มที่ถูกกด
-}
-
-onClick(event: MouseEvent) {
-  console.log(event.clientX, event.clientY) // พิกัดตำแหน่งที่คลิก
+  
+isShift(event: any) {
+    if (event.shiftKey && event.key === 'Y') {
+      console.log('Shift + Y is pressed', event);
+    }
 }
 
 }
