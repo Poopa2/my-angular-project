@@ -11,11 +11,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
 
-   // updateStyles: any = 'updateStyles';
-  hasText: boolean = false;
+   colorMode: string = 'lightMode';
+ 
+toggleMode() {
+    if (this.colorMode === 'lightMode') {
+      this.colorMode = 'darkMode';
+    } else {
+      this.colorMode = 'lightMode';
+    }
 
-  textInput(e: any) {
-    this.hasText = e.target.value !== '';
   }
 
 }

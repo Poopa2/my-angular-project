@@ -1,69 +1,48 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
   padding: 20px;
-  background-color: #333;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 0 auto;
+  background-color: #f7f7f7;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
-
-label {
-  font-size: 18px;
-  margin-bottom: 10px;
+.lightMode {
+  background-color: #f5f5f5;
+  color: #000;
 }
-
-input[type="text"] {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  outline: none;
-  max-width: 300px;
-  margin-bottom: 20px;
-}
-
-.message {
-  text-align: center;
-}
-
-.eligible {
-  color: #28a745;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.not-eligible {
-  color: #dc3545;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.updateStyles {
-  text-align: center;
-  background-color: #2f534b;
-  color: goldenrod;
-  font-size: 21px;
-  padding: 10px 20px;
-  margin: 0 auto;
-  border-radius: 5px;
-  width: 700px;
-}
-.italicText {
-  font-style: italic;
-}
-.letterFormat {
-  text-transform: uppercase;
-}
-input {
-  width: 200px;
-  height: 25px;
-  font-size: 15px;
+.darkMode {
+  background-color: #2b2b2b;
   color: #fff;
 }
-input.txt {
-  background-color: rgba(7, 145, 94, 0.956);
+.box {
+  width: 40%;
+  margin: 0 auto;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 9px;
+  transition: all 0.1s ease;
+  margin-bottom: 15px;
+}
+button {
+  background-color: rgb(81, 89, 80);
+  position: relative;
+  top: -6px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #262525;
 }
