@@ -11,11 +11,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
 
-  age: number = 0;
-  isEligible: boolean = false;
+   // updateStyles: any = 'updateStyles';
+  hasText: boolean = false;
 
-  checkEligibility() {
-    this.isEligible = this.age >= 18;
+  textInput(e: any) {
+    this.hasText = e.target.value !== '';
   }
 
 }
