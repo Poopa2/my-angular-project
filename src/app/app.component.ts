@@ -11,15 +11,22 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
 
-     applyVal = {
-    color: 'darkgreen',
-    'font-style': 'italic',
-    'font-size': '35px',
-    'font-weight': 'bold',
-  };
- 
- // colorVal: string = 'navy';
-  // fontSize: string = '30px';
-  // isItalic: string = 'italic';
-
+ subjectList = [
+    {
+      subCode: 101,
+      name: 'JavaScript',
+    },
+    {
+      // subCode: 102,
+      name: 'C++',
+    },
+    {
+      subCode: 103,
+      name: 'NestJS',
+    },
+    {
+      subCode: 104,
+      name: 'Python',
+    },
+  ];
 }

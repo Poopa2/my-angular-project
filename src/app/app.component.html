@@ -1,2 +1,8 @@
-<div style="text-align: center">
-  <p [ngStyle]="applyVal">Example of [ngStyle] directive</p>
+@for (subject of subjectList; track subject.subCode ?? subject.name) {
+  @if (subject.subCode) {
+    <div class="subject-row">
+      <span class="code">Subject Code: {{ subject.subCode }},</span>
+      <span class="name">Subject Name: {{ subject.name }}</span>
+    </div>
+  }
+}
