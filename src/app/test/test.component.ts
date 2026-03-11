@@ -1,12 +1,4 @@
-import {
-  AfterContentChecked,
-  AfterContentInit,
-  Component,
-  ContentChild,
-  DoCheck,
-  ElementRef,
-  ViewChild,
-} from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -15,16 +7,12 @@ import {
   templateUrl: './test.component.html',
   styleUrl: './test.component.css',
 })
-export class TestComponent implements AfterContentInit, AfterContentChecked {
-  @ViewChild('wrapper') wrapper!: ElementRef;
-  @ContentChild('contentWrapper') content!: ElementRef;
-
-  ngAfterContentInit(): void {
-    console.log('ngAfterContentInit() was invoked...');
-    console.log('ngAfterContentInit() - wrapper: ', this.wrapper);
-    console.log('ngAfterContentInit() - content: ', this.content);
+export class TestComponent implements OnInit, OnDestroy {
+  ngOnInit(): void {
+    console.log('Test Component: OnInit');
   }
-  ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked() hook was invoked...');
+
+  ngOnDestroy(): void {
+    console.log('Test Component: OnDestroy');
   }
 }
