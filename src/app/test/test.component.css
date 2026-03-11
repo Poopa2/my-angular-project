@@ -2,9 +2,27 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  background-color: #8d9064;
-  height: auto;
+  justify-content: center;
+  padding: 20px;
+  background-color: #333;
+  padding: 15px;
+  width: 80%;
+  margin: 20px auto;
   border-radius: 5px;
-  padding: 10px;
+}
+
+h1 {
+  margin: 10px auto;
+  color: moccasin;
+  font-weight: bold;
+}
+button {
+  background-color: #429be3;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px 12px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
